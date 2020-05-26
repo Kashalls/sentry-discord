@@ -13,8 +13,8 @@ module.exports = async (request, response) => {
     const { body } = request;
 
     const payload = {
-      username: 'Sentry',
-      avatar_url: `https://raw.githubusercontent.com/IanMitchell/sentry-discord/master/sentry-icon.png`,
+      username: 'Eternity',
+      avatar_url: `https://i.imgur.com/WwCN9bd.png`,
       embeds: [
         {
           title: body.project_name,
@@ -24,8 +24,8 @@ module.exports = async (request, response) => {
           timestamp: new Date(body.event.received * 1000).toISOString(),
           color: COLORS[body.level] || COLORS.error,
           footer: {
-            icon_url: 'https://github.com/fluidicon.png',
-            text: 'ianmitchell/sentry-discord',
+            icon_url: 'https://i.imgur.com/WwCN9bd.png',
+            text: 'This is your Eternity.',
           },
           fields: [],
         },
